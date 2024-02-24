@@ -11,7 +11,8 @@ export default {
       },
       colors: {
         verdePastel: '#C6E5B1',
-        verdeDivisoria: '#dae7d1'
+        verdeDivisoria: '#dae7d1',
+        verdeShadow: '#253819'
       },
     },
   },
