@@ -14,6 +14,11 @@ export default {
         verdeDivisoria: '#dae7d1',
         verdeShadow: '#253819'
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'serif'],
+
+      }
     },
   },
   plugins: [],

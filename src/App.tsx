@@ -1,5 +1,5 @@
 import { GithubLogo, Stack } from "@phosphor-icons/react";
-import { Coffee, Link, Linkedin, User } from "lucide-react";
+import { ChevronDown, Code2, Coffee, Link, Linkedin, User } from "lucide-react";
 import balcar from './assets/balcarSite.png';
 import guardians from './assets/guardians.png';
 import xbox from './assets/xbox.png';
@@ -15,8 +15,133 @@ import twitter from './assets/twitterUi.png';
 export function App() {
   return (
     <main className="grid grid-cols-mainContainer" >
+
+      <header className="fixed top-0 w-full px-[24vh] h-16 flex justify-left z-10">
+        <div className="flex items-center gap-3">
+          <div className="flex items-center">
+            <Code2 className="text-verdePastel size-5" />
+          </div>
+
+          <svg
+            className='mr-3'
+            width="6"
+            height="16"
+            viewBox="0 0 6 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+          <line
+            x1="-0"
+            y1="-1"
+            x2="6"
+            y2="16"
+            className="stroke-verdePastel"
+          />
+        </svg>
+
+        <div className="flex gap-3.5">
+          <a href="https://github.com/suavegreen.png" className="text-lg items-center font-mono text-verdePastel flex gap-4 hover:cursor-pointer">
+            Sobre mim
+            <ChevronDown className="text-verdePastel size-5" />
+          </a>
+        </div>
+
+        <svg
+          className='mx-1'
+          width="6"
+          height="16"
+          viewBox="0 0 6 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="-0"
+            y1="-1"
+            x2="6"
+            y2="16"
+            className="stroke-verdePastel"
+          />
+        </svg>
+        <div className="flex gap-3.5">
+          <a href="https://github.com/suavegreen.png" className="text-lg items-center font-mono text-verdePastel flex gap-4 hover:cursor-pointer">
+            O que já estudei
+            <ChevronDown className="text-verdePastel size-5" />
+          </a>
+        </div>
+
+        <svg
+          className='mx-1'
+          width="6"
+          height="16"
+          viewBox="0 0 6 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="-0"
+            y1="-1"
+            x2="6"
+            y2="16"
+            className="stroke-verdePastel"
+          />
+        </svg>
+
+        <div className="flex gap-3.5">
+          <a href="#" className="text-lg items-center font-mono text-verdePastel flex gap-4 hover:cursor-pointer">
+            Projetos Principais
+            <ChevronDown className="text-verdePastel size-5" />
+          </a>
+
+          
+        </div>
+
+        <svg
+          className='mx-1'
+          width="6"
+          height="16"
+          viewBox="0 0 6 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="-0"
+            y1="-1"
+            x2="6"
+            y2="16"
+            className="stroke-verdePastel"
+          />
+        </svg>
+
+        <div className="flex gap-4">
+          <a href="#" className="text-lg items-center font-mono text-verdePastel flex gap-4 hover:cursor-pointer">
+            Intensivões
+            <ChevronDown className="text-verdePastel size-5" />
+          </a>
+        </div>
+
+        <svg
+          className='mx-1'
+          width="6"
+          height="16"
+          viewBox="0 0 6 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="-0"
+            y1="-1"
+            x2="6"
+            y2="16"
+            className="stroke-verdePastel"
+          />
+        </svg>
+      </div>
+
+
+      </header>
+
       <aside className="pl-[24vh] h-full">
-        <div className="w-800 pl-[24vh] pt-28 fixed left-0 bot-0">
+        <div className="w-800 pl-[24vh] pt-28 fixed left-0 top-0">
           <img src="https://github.com/suavegreen.png" className="rounded-full h-40 w-40 mb-8" />
           <div className="grid gap-4 justify-center">
             <div className="flex gap-2">
@@ -30,24 +155,23 @@ export function App() {
             </div>
             <div className="flex gap-2">
               <Stack className="h-5 w-5 text-verdePastel" />
-              <h2 className="hover:translate-x-3 duration-300 hover:cursor-default">
+              <h2 className="hover:translate-x-3 duration-300 hover:cursor-default font-mono">
                 Front-End
               </h2>
             </div>
             <div className="flex gap-2">
               <Linkedin className="h-5 w-5 text-verdePastel"/>
-              <a href="https://linkedin.com/in/pedrohccaetano" target="_blank" className="hover:translate-x-3 duration-300 hover:cursor-pointer">
+              <a href="https://linkedin.com/in/pedrohccaetano" target="_blank" className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono">
                 Linkedin
               </a>
             </div>
             <div className="flex gap-2">
               <GithubLogo className="text-verdePastel h-5 w-5" />
-              <a href="https://github.com/SuaveGreen" target="_blank" className="hover:translate-x-3 duration-300 hover:cursor-pointer">
+              <a href="https://github.com/SuaveGreen" target="_blank" className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono">
                 GitHub
               </a>
             </div>
             <div className="grid grid-cols-1 gap-2 pt-[38vh]">
-              {/* <GithubLogo className="text-verdePastel h-5 w-5" /> */}
               <p>
                 Achou interessante?
               </p>
@@ -116,50 +240,50 @@ export function App() {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" className="w-6 h-6 mr-5" />
                 HTML5
               </p>
-              <p className="flex">
+              <p className="flex items-center">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" className="w-6 h-6 mr-5" />
                 CSS 
               </p>
-              <p className="flex">
+              <p className="flex items-center">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" className="w-6 h-6 mr-5" />
                 JavaScript 
               </p>
-              <p className="flex">
+              <p className="flex items-center">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" className="w-6 h-6 mr-5" />
                 React 
               </p>
-              <p className="flex">
+              <p className="flex items-center">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="w-6 h-6 mr-5" />
                 Tailwimd CSS 
               </p>
-              <p className="flex">
+              <p className="flex items-center">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className="w-6 h-6 mr-5" />
                 TypeScript 
               </p>
             </div>
             <div className="grid grid-cols-3 gap-8">
-              <p className="flex">
+              <p className="flex items-center">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" className="w-6 h-6 mr-5" />
                 Sass
               </p>
-              <p className="flex">
+              <p className="flex items-center">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gulp/gulp-plain.svg" className="w-6 h-6 mr-5" />
                 Gulp
               </p>
-              <p className="flex">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" className="w-6 h-6 mr-5" />
+              <p className="flex items-center">
+                <i className="devicon-github-original text-2xl mr-5" />
                 Github
               </p>
-              <p className="flex">
+              <p className="flex items-center">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grunt/grunt-original.svg" className="w-6 h-6 mr-5" />
                 Grunt 
               </p>
-              <p className="flex">
+              <p className="flex items-center">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" className="w-6 h-6 mr-5" />
                 Vue 
               </p>
-              <p className="flex">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" className="w-7 h-7 mr-5" />
+              <p className="flex items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" className="w-7 h-7 mr-5" />
                 jQuery 
               </p>
             </div>
@@ -194,7 +318,7 @@ export function App() {
                   <h1 className="text-verdePastel text-center text-3xl">
                     Guardiões da Galáxia Vol.3
                   </h1>
-                  <p className="p-6 w-[70vh] text-justify indent-5">
+                  <p className="pr-6 w-[70vh] text-justify indent-5">
                     Este é um site descritivo do filme Guardiões da Galáxia Vol. 3, 
                     onde é possível ver o resumo do filme e dos personagens principais, 
                     além de ver os outros filme do grupo e em quais outros filmes já participaram. 
@@ -229,7 +353,7 @@ export function App() {
                   <h1 className="text-verdePastel text-center text-3xl">
                     Balcar
                   </h1>
-                  <p className="p-6 w-[70vh] text-justify indent-5">
+                  <p className="pr-6 w-[70vh] text-justify indent-5">
                     Balcar é um site Front-End de caronas paga, onde há uma 
                     descrição de como funciona, ver quais as cidades disponíveis, 
                     baixar o aplicativo, quais tipos de serviços, além de poder 
@@ -261,7 +385,7 @@ export function App() {
                   <h1 className="text-verdePastel text-center text-3xl">
                     Xbox
                   </h1>
-                  <p className="p-6 w-[70vh] text-justify indent-5">
+                  <p className="pr-6 w-[70vh] text-justify indent-5">
                     Site sobre a marca Xbox, onde o objetivo era aprender sobre Bootstrap, 
                     utilizando os componentes disponibilizado para a construção do site, 
                     além de estilizar cada componente utilizando o Bootstrap.
@@ -296,7 +420,7 @@ export function App() {
                   <h1 className="text-verdePastel text-center text-3xl">
                     Site Responsivo
                   </h1>
-                  <p className="p-6 w-[70vh] text-justify indent-5">
+                  <p className="pr-6 w-[70vh] text-justify indent-5">
                   Este é um site simples, sem muito elementos visuais.
                   O principal objetivo é aprender sobre a responsividade, aplicando 
                   neste site a responsividade para cada tamanho de tela, sendo ela: 
@@ -346,7 +470,7 @@ export function App() {
                   <h1 className="text-verdePastel text-center text-3xl">
                     Expert notes
                   </h1>
-                  <p className="p-6 w-[70vh] text-justify indent-5">
+                  <p className="pr-6 w-[70vh] text-justify indent-5">
                     Feito na RecketSeat, junto com o professo Diego Fernandes, na NLW - Trilha de React
                     O site é um bloco de notas, onde também podemos transcrever áudio em texto, e salvar 
                     na memória do navegador. Usamos o React para criar os conteúdos, e com Tailwind CSS estilizamos os componentes.
@@ -379,7 +503,7 @@ export function App() {
                   <h1 className="text-verdePastel text-center text-3xl">
                     Twitter
                   </h1>
-                  <p className="p-6 w-[70vh] text-justify indent-5">
+                  <p className="pr-6 w-[70vh] text-justify indent-5">
                     Este site foi criado em um MasterClass junto com o professor 
                     Diego Fernandes, da RocketSeat. O principal intuito desta 
                     MasterClass, era aprender conceitos básicos, mas muito importantes 
@@ -413,7 +537,7 @@ export function App() {
                   <h1 className="text-verdePastel text-center text-3xl">
                     SmartWatch Apple
                   </h1>
-                  <p className="p-6 w-[70vh] text-justify indent-5">
+                  <p className="pr-6 w-[70vh] text-justify indent-5">
                     Um site sobre o smartwatch da Apple, feito no intensivão da 
                     Hashtag de JavaScript Aula 2,
                     o objetivo deste site era a manipulação dos elementos da tela, 
@@ -447,7 +571,7 @@ export function App() {
                   <h1 className="text-verdePastel text-center text-3xl">
                     Áudio Book
                   </h1>
-                  <p className="p-6 w-[70vh] text-justify indent-5">
+                  <p className="pr-6 w-[70vh] text-justify indent-5">
                     Um site simples, como objetivo de aprender mais sobre alguns 
                     conceitos importantes sobre JavaScript. Foi criado
                     um player de Áudio Book, onde percorremos sobre cada uns dos 
