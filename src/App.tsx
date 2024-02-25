@@ -1,5 +1,5 @@
 import { GithubLogo, Stack } from "@phosphor-icons/react";
-import { ChevronDown, Code2, Coffee, Link, Linkedin, User } from "lucide-react";
+import { ChevronRight, Link, Linkedin, User } from "lucide-react"; // Coffee, Code2 // adicionar dps
 import balcar from './assets/balcarSite.png';
 import guardians from './assets/guardians.png';
 import xbox from './assets/xbox.png';
@@ -9,184 +9,84 @@ import audioBook from './assets/audioBook.png';
 import expert from './assets/expertNote.png';
 import twitter from './assets/twitterUi.png';
 
-// Colocar no Aside para fixar, quando eu souber como saber ↓
-// fixed left-0 top-0
-
 export function App() {
   return (
     <main className="grid grid-cols-mainContainer" >
-
-      <header className="fixed top-0 w-full px-[24vh] h-16 flex justify-left z-10">
-        <div className="flex items-center gap-3">
-          <div className="flex items-center">
-            <Code2 className="text-verdePastel size-5" />
-          </div>
-
-          <svg
-            className='mr-3'
-            width="6"
-            height="16"
-            viewBox="0 0 6 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-          <line
-            x1="-0"
-            y1="-1"
-            x2="6"
-            y2="16"
-            className="stroke-verdePastel"
-          />
-        </svg>
-
-        <div className="flex gap-3.5">
-          <a href="https://github.com/suavegreen.png" className="text-lg items-center font-mono text-verdePastel flex gap-4 hover:cursor-pointer">
-            Sobre mim
-            <ChevronDown className="text-verdePastel size-5" />
-          </a>
-        </div>
-
-        <svg
-          className='mx-1'
-          width="6"
-          height="16"
-          viewBox="0 0 6 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="-0"
-            y1="-1"
-            x2="6"
-            y2="16"
-            className="stroke-verdePastel"
-          />
-        </svg>
-        <div className="flex gap-3.5">
-          <a href="https://github.com/suavegreen.png" className="text-lg items-center font-mono text-verdePastel flex gap-4 hover:cursor-pointer">
-            O que já estudei
-            <ChevronDown className="text-verdePastel size-5" />
-          </a>
-        </div>
-
-        <svg
-          className='mx-1'
-          width="6"
-          height="16"
-          viewBox="0 0 6 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="-0"
-            y1="-1"
-            x2="6"
-            y2="16"
-            className="stroke-verdePastel"
-          />
-        </svg>
-
-        <div className="flex gap-3.5">
-          <a href="#" className="text-lg items-center font-mono text-verdePastel flex gap-4 hover:cursor-pointer">
-            Projetos Principais
-            <ChevronDown className="text-verdePastel size-5" />
-          </a>
-
-          
-        </div>
-
-        <svg
-          className='mx-1'
-          width="6"
-          height="16"
-          viewBox="0 0 6 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="-0"
-            y1="-1"
-            x2="6"
-            y2="16"
-            className="stroke-verdePastel"
-          />
-        </svg>
-
-        <div className="flex gap-4">
-          <a href="#" className="text-lg items-center font-mono text-verdePastel flex gap-4 hover:cursor-pointer">
-            Intensivões
-            <ChevronDown className="text-verdePastel size-5" />
-          </a>
-        </div>
-
-        <svg
-          className='mx-1'
-          width="6"
-          height="16"
-          viewBox="0 0 6 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="-0"
-            y1="-1"
-            x2="6"
-            y2="16"
-            className="stroke-verdePastel"
-          />
-        </svg>
-      </div>
-
-
-      </header>
-
       <aside className="pl-[24vh] h-full">
-        <div className="w-800 pl-[24vh] pt-28 fixed left-0 top-0">
+        <div className="pl-[24vh] pt-[9vh] fixed left-0 top-0">
           <img src="https://github.com/suavegreen.png" className="rounded-full h-40 w-40 mb-8" />
-          <div className="grid gap-4 justify-center">
-            <div className="flex gap-2">
-              <User className="h-5 w-5 text-verdePastel" />
-              <h1 className="hover:translate-x-3 duration-300 hover:cursor-default">
-              <img 
-                src="https://readme-typing-svg.herokuapp.com?&size=16&duration=1800&color=C6E5B1&vCenter=true&repeat=false&width=115&height=24&lines=Pedro+Caetano"
-                className="w-full"
-              />
-              </h1>
+          <div className="grid gap-8">
+            <div className="grid gap-4 justify-left">
+              <div className="flex gap-2">
+                <User className="size-5 text-verdePastel" />
+                <h1 className="hover:translate-x-3 duration-300 hover:cursor-default">
+                <img 
+                  src="https://readme-typing-svg.herokuapp.com?&size=16&duration=1800&color=C6E5B1&vCenter=true&repeat=false&width=115&height=24&lines=Pedro+Caetano"
+                  className="w-full"
+                />
+                </h1>
+              </div>
+              <div className="flex gap-2">
+                <Stack className="size-5 text-verdePastel" />
+                <h2 className="hover:translate-x-3 duration-300 hover:cursor-default font-mono">
+                  Front-End
+                </h2>
+              </div>
+              <div className="flex gap-2">
+                <Linkedin className="size-5 text-verdePastel"/>
+                <a href="https://linkedin.com/in/pedrohccaetano" target="_blank" className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono">
+                  Linkedin
+                </a>
+              </div>
+              <div className="flex gap-2">
+                <GithubLogo className="text-verdePastel size-5" />
+                <a href="https://github.com/SuaveGreen" target="_blank" className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono">
+                  GitHub
+                </a>
+              </div>
+              {/* <div className="grid grid-cols-1 gap-2 pt-[38vh]">
+                <p>
+                  Achou interessante?
+                </p>
+                <p>
+                  Não hesite!
+                </p>
+                <p className="flex gap-2">
+                  Bora marcar um café!
+                  <Coffee/>
+                </p>
+              </div> */}
             </div>
-            <div className="flex gap-2">
-              <Stack className="h-5 w-5 text-verdePastel" />
-              <h2 className="hover:translate-x-3 duration-300 hover:cursor-default font-mono">
-                Front-End
-              </h2>
-            </div>
-            <div className="flex gap-2">
-              <Linkedin className="h-5 w-5 text-verdePastel"/>
-              <a href="https://linkedin.com/in/pedrohccaetano" target="_blank" className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono">
-                Linkedin
-              </a>
-            </div>
-            <div className="flex gap-2">
-              <GithubLogo className="text-verdePastel h-5 w-5" />
-              <a href="https://github.com/SuaveGreen" target="_blank" className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono">
-                GitHub
-              </a>
-            </div>
-            <div className="grid grid-cols-1 gap-2 pt-[38vh]">
-              <p>
-                Achou interessante?
-              </p>
-              <p>
-                Não hesite!
-              </p>
-              <p className="flex gap-2">
-                Bora marcar um café!
-                <Coffee/>
-              </p>
+            <div className="grid gap-2">
+              <div>
+                <a href="#aboutMe" className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
+                  Sobre mim
+                  <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
+                </a>
+              </div>
+              <div>
+                <a href="#jaEstudei" className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
+                  Conhecimento
+                  <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
+                </a>
+              </div>
+              <div>
+                <a href="#mainProjects" className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
+                  Projetos
+                  <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
+                </a>
+              </div>
+              <div>
+                <a href="#intensivos" className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
+                  Intensivões
+                  <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </aside>
-      <div className="h-full pt-20 pr-[24vh]">
+      <div className="h-full pt-[9vh] pr-[24vh]" id="aboutMe">
         
         <img 
           src="https://capsule-render.vercel.app/api?type=waving&color=C6E5B1&height=85&section=header"
@@ -227,6 +127,7 @@ export function App() {
             <img 
               src="https://capsule-render.vercel.app/api?type=waving&color=C6E5B1&height=85&section=header"
               className="w-full"
+              id="jaEstudei"
             />
           </div>
 
@@ -303,6 +204,7 @@ export function App() {
             <img 
               src="https://capsule-render.vercel.app/api?type=waving&color=C6E5B1&height=85&section=header"
               className="w-full"
+              id="mainProjects"
             />
           </div>
         </div>
@@ -457,6 +359,7 @@ export function App() {
             <img 
               src="https://capsule-render.vercel.app/api?type=waving&color=C6E5B1&height=85&section=header"
               className="w-full"
+              id="intensivos"
             />
         </div>
         <div className="pb-12">
