@@ -1,7 +1,6 @@
 import { GithubLogo } from "@phosphor-icons/react";
 import { Link } from "lucide-react";
 import { IconMiniature } from "./IconMiniature";
-// import expert from '../assets/expertNote.png';
 
 interface Projects {
   name: string
@@ -10,13 +9,6 @@ interface Projects {
   linkSite: string
   linkGithub?: string
 }
-
-// Feito na RecketSeat, junto com o professo Diego Fernandes, na NLW - Trilha de React
-//                 O site é um bloco de notas, onde também podemos transcrever áudio em texto, e salvar 
-//                 na memória do navegador. Usamos o React para criar os conteúdos, e com Tailwind CSS estilizamos os componentes.
-// https://github.com/SuaveGreen/guardioes_da_galaxia
-// https://expert-notes-green.vercel.app
-
 
 export function Projects(props: Projects) {
   return(
