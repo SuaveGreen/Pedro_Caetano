@@ -2,7 +2,7 @@ import { ArrowDown } from "lucide-react";
 
 export function Hero() {
   return (
-    <div className="flex h-[80vh] mb-[20vh] w-full text-left items-center" id="hero">
+    <div className="flex h-[80vh] mb-[35vh] w-full text-left items-center">
       <h2 className="font-mono text-7xl font-bold">
         Olá!
         <p>Eu sou:</p>

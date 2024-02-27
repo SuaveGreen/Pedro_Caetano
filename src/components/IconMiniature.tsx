@@ -10,7 +10,7 @@ export function IconMiniature(props: IconDev) {
   
   return(
     <div>
-      <img src={reactImg} className="w-6 h-6" alt={props.nome} />
+      <img src={reactImg} className="w-6 h-6" title={props.nome} />
     </div>
   )
 }
@@ -18,4 +18,7 @@ export function IconMiniature(props: IconDev) {
 {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" className="w-6 h-6" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="w-6 h-6" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className="w-6 h-6" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" className="w-6 h-6" /> */}
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" className="w-6 h-6" /> 
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gulp/gulp-plain.svg" />
+          */}

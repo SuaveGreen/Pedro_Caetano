@@ -5,7 +5,7 @@ interface SectionName{
 
 export function NameSection(props: SectionName) {
   return(
-      <h1 className="text-4xl py-14 text-center text-verdePastel">
+      <h1 className="text-4xl pb-14 text-center text-verdePastel">
         {props.name}
       </h1>
   )

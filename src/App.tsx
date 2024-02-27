@@ -14,34 +14,31 @@ import xbox from './assets/xbox.png';
 import responsivo from './assets/responsive.png';
 import { Hero } from "./containers/Hero";
 import Carousel from "nuka-carousel";
+import { ButtonTop } from "./components/ButtonTop";
+import { Link } from 'react-scroll';
 
+// import Teste from "./components/Teste";
 
 // Instalar →  npm i swiper
 
 export function App() {
-
   return (
-    <main className="grid grid-cols-mainContainer pb-24" >
-      {/* {showAside ? ( */}
+    <main className="grid grid-cols-mainContainer bg-gradient-to-r from-[#121922]" >
       <Aside/>
-      <div className="h-full pt-[9vh] pr-[24vh]" id="aboutMe">
+      <div className="h-full pt-[9vh] pr-[24vh]" id="hero">
         <Hero />
-        <img 
-          src="https://capsule-render.vercel.app/api?type=waving&color=C6E5B1&height=80&section=header"
-          className="w-full"
-        />
-        <div className="space-y-7">
+        <div className="space-y-7" id="aboutMe">
           <AboutMe/>
           <Divider id="jaEstudei" />
-          <JaEstudei />
+          <JaEstudei tecnologia={['html5', 'css3', 'javascript', 'react','tailwindcss', 'typescript', 'sass', 'redux','github', 'grunt', 'jquery', 'vuejs']}/>
           <Divider id="mainProjects" />
         </div>
 
         {/* Secão 1 */}
         <NameSection name="Projetos" />
           <Carousel className="" cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
-          autoplay={true} autoplayInterval={5000} speed={800} withoutControls={true} animation="zoom" >
-            <Projects 
+            autoplay={true} autoplayInterval={5000} speed={800} withoutControls={true} animation="zoom" >
+            <Projects tecnologiaUsada={['html5', 'css3', 'javascript', 'sass']}
               name="Guardiões da Galáxia Vol.3" 
               text="Este é um site descritivo do filme Guardiões da Galáxia Vol. 3, 
                 onde é possível ver o resumo do filme e dos personagens principais, 
@@ -51,7 +48,7 @@ export function App() {
               linkGithub="https://github.com/SuaveGreen/guardioes_da_galaxia" 
               linkSite="https://guardioes-da-galaxia-tau.vercel.app/"
             />
-            <Projects 
+            <Projects tecnologiaUsada={['html5', 'css3', 'javascript', 'sass']}
               name="Balcar" 
               text="Balcar é um site Front-End de caronas paga, onde há uma descrição 
                 de como funciona, ver quais as cidades disponíveis, baixar o aplicativo, 
@@ -60,7 +57,7 @@ export function App() {
               path={balcar}
               linkSite="https://balcar.vercel.app/"
             />
-            <Projects 
+            <Projects tecnologiaUsada={['html5', 'css3', 'javascript', 'bootstrap']}
               name="Xbox" 
               text="Site sobre a marca Xbox, onde o objetivo era aprender sobre 
                 Bootstrap, utilizando os componentes disponibilizado para a construção 
@@ -72,8 +69,8 @@ export function App() {
               linkGithub="https://github.com/SuaveGreen/guardioes_da_galaxia" 
               linkSite="https://guardioes-da-galaxia-tau.vercel.app/"
             />
-            <Projects 
-              name="Guardiões da Galáxia Vol.3" 
+            <Projects tecnologiaUsada={['html5', 'css3', 'javascript']}
+              name="Site responsivo" 
               text="Este é um site descritivo do filme Guardiões da Galáxia Vol. 3, 
                 onde é possível ver o resumo do filme e dos personagens principais, 
                 além de ver os outros filme do grupo e em quais outros filmes já participaram. 
@@ -89,7 +86,7 @@ export function App() {
         <NameSection name="Intensivos" />
         <Carousel cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
           autoplay={true} autoplayInterval={5000} speed={800} withoutControls={true} animation="zoom">
-          <Projects 
+          <Projects tecnologiaUsada={['react', 'tailwindcss', 'typescript', 'html5']}
             name="Expert notes" 
             text="Feito na RecketSeat, junto com o professo Diego Fernandes, 
               na NLW - Trilha de React O site é um bloco de notas, onde também 
@@ -100,7 +97,7 @@ export function App() {
             linkGithub="https://github.com/SuaveGreen/Bloco_de_notas" 
             linkSite="https://expert-notes-green.vercel.app"
           />        
-          <Projects 
+          <Projects tecnologiaUsada={['react', 'tailwindcss', 'typescript', 'html5']}
             name="Twitter" 
             text="Este site foi criado em um MasterClass junto com o professor 
               Diego Fernandes, da RocketSeat. O principal intuito desta 
@@ -110,7 +107,7 @@ export function App() {
             linkGithub="https://github.com/SuaveGreen/ui-twitter" 
             linkSite="https://ui-twitter-lime.vercel.app"
           />        
-          <Projects 
+          <Projects tecnologiaUsada={['html5', 'css3', 'javascript']}
             name="SmartWatch Apple" 
             text="Um site sobre o smartwatch da Apple, feito no intensivão da 
               Hashtag de JavaScript Aula 2,
@@ -121,7 +118,7 @@ export function App() {
             linkGithub="https://github.com/SuaveGreen/landing-page_Apple" 
             linkSite="https://page-apple.vercel.app"
           />       
-          <Projects 
+          <Projects tecnologiaUsada={['html5', 'css3', 'javascript']}
             name="Áudio Book" 
             text="Um site simples, como objetivo de aprender mais sobre alguns 
               conceitos importantes sobre JavaScript. Foi criado
@@ -135,10 +132,18 @@ export function App() {
         </Carousel>
         <img 
           src="https://capsule-render.vercel.app/api?type=waving&color=C6E5B1&height=80&section=footer"
-          className="w-full"
+          className="w-full pt-28"
         />
-        {/* <ProjectsSection />         */}
-        {/* <Intensivos /> */}
+        <Link
+          activeClass="active"
+          to="hero"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1000}
+        >
+          <ButtonTop />
+        </Link>
       </div>
     </main>
   )
