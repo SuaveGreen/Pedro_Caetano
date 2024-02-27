@@ -7,7 +7,7 @@ export function ButtonTop() {
 
   const toggleVisibility = () => {
     const currentScrollPos = window.scrollY;
-    const isVisible = currentScrollPos > 2600; // Ajuste este valor conforme necessário
+    const isVisible = currentScrollPos <= 2600; // Ajuste este valor conforme necessário
     setIsVisible(isVisible);
   };
 
@@ -19,7 +19,7 @@ export function ButtonTop() {
   // 
 
   return(
-    <a href="#hero" className={`transition-all duration-500 ${isVisible ? 'opacity-100 visible ' : 'opacity-0 invisible '} fixed right-10 bottom-10 animate-bounce`}>
+    <a href="#hero" className={`transition-all duration-500 ${!isVisible ? 'opacity-100 visible ' : 'opacity-0 invisible '} fixed right-10 bottom-10 animate-bounce`}>
       <ArrowUp className="bg-[#6689be28] h-12 w-12 p-2 rounded-full"/>
     </a>
   )

@@ -9,7 +9,7 @@ export function Aside() {
 
   const toggleVisibility = () => {
     const currentScrollPos = window.scrollY;
-    const isVisible = currentScrollPos > 400; // Ajuste este valor conforme necessário
+    const isVisible = currentScrollPos <= 400; // Ajuste este valor conforme necessário
     setIsVisible(isVisible);
   };
 
@@ -19,7 +19,7 @@ export function Aside() {
   }, []);
 
   return (
-    <aside className={`transition-all duration-500 ${isVisible ? 'opacity-100 visible ' : 'opacity-0 invisible '}`} >
+    <aside className={`transition-all duration-500 ${!isVisible ? 'opacity-100 visible ' : 'opacity-0 invisible '} `} >
       <div className="px-[15vh] h-full pt-[9vh] fixed left-0 top-0 bg-[#12141a] bg-gradient-to-l from-[#161f2b]">
         <div className="">
           <img src="https://github.com/suavegreen.png" className="rounded-full h-40 w-40 mb-8" />
