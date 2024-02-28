@@ -71,10 +71,7 @@ export function App() {
             />
             <Projects tecnologiaUsada={['html5', 'css3', 'javascript']}
               name="Site responsivo" 
-              text="Este é um site descritivo do filme Guardiões da Galáxia Vol. 3, 
-                onde é possível ver o resumo do filme e dos personagens principais, 
-                além de ver os outros filme do grupo e em quais outros filmes já participaram. 
-                É possível também ver alguns postêrs do filmes e de alguns personagens." 
+              text="Mudar esta descrição." 
               path={responsivo}
               linkGithub="https://github.com/SuaveGreen/site_responsivo" 
               linkSite="https://site-responsivo-plum.vercel.app/"
