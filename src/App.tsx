@@ -71,7 +71,11 @@ export function App() {
             />
             <Projects tecnologiaUsada={['html5', 'css3', 'javascript']}
               name="Site responsivo" 
-              text="Mudar esta descrição." 
+              text="Este é um site simples, sem muito elementos visuais.
+
+              O principal objetivo é aprender sobre a responsividade, aplicando 
+              neste site a responsividade para cada tamanho de tela, sendo ela: 
+              Celular, Tablets e Computadores/Notebooks." 
               path={responsivo}
               linkGithub="https://github.com/SuaveGreen/site_responsivo" 
               linkSite="https://site-responsivo-plum.vercel.app/"
