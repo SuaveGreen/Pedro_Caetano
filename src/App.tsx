@@ -1,19 +1,19 @@
 import { Aside } from "./containers/Aside";
-import { Divider } from "./components/Divider";
-import { AboutMe } from './containers/AboutMe'
-import { JaEstudei } from "./containers/JaEstudei";
-import { NameSection } from "./components/NameSection";
-import { Projects } from "./components/Projects";
-import guardians from './assets/guardians.png';
-import twitter from './assets/twitterUi.png';
-import applePage from './assets/apple.png';
-import audioBook from './assets/audioBook.png';
-import expertNote from './assets/expertNote.png';
-import balcar from './assets/balcarSite.png';
-import xbox from './assets/xbox.png';
-import responsivo from './assets/responsive.png';
-import { Hero } from "./containers/Hero";
-import Carousel from "nuka-carousel";
+// import { Divider } from "./components/Divider";
+// import { AboutMe } from './containers/AboutMe'
+// import { JaEstudei } from "./containers/JaEstudei";
+// import { NameSection } from "./components/NameSection";
+// import { Projects } from "./components/Projects";
+// import guardians from './assets/guardians.png';
+// import twitter from './assets/twitterUi.png';
+// import applePage from './assets/apple.png';
+// import audioBook from './assets/audioBook.png';
+// import expertNote from './assets/expertNote.png';
+// import balcar from './assets/balcarSite.png';
+// import xbox from './assets/xbox.png';
+// import responsivo from './assets/responsive.png';
+// import { Hero } from "./containers/Hero";
+// import Carousel from "nuka-carousel";
 import { ButtonTop } from "./components/ButtonTop";
 import { Link } from 'react-scroll';
 

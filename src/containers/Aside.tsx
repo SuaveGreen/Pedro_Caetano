@@ -148,7 +148,7 @@ export function Aside() {
                   offset={-120}
                   duration={800}
                 >
-                  <a className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group hidden">
+                  <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
                     Intensivões
                     <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
                   </a>
