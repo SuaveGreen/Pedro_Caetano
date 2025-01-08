@@ -34,6 +34,25 @@ export default {
         bounceR: 'bounceR 1s ease-in-out infinite',
       }
     },
+    screens: {
+      'celular': '320px',
+      // => @media (min-width: 320px) { ... }
+
+      // 'sm': '640px',
+      // => @media (min-width: 640px) sm { ... }
+
+      'tablet': '768px',
+      // => @media (min-width: 768px) md { ... }
+
+      'tabletx': '1024px',
+      // => @media (min-width: 1024px) lg { ... }
+
+      'notebook': '1280px',
+      // => @media (min-width: 1280px) xl { ... }
+
+      'monitor': '1536px',
+      // => @media (min-width: 1536px) 2xl { ... }
+    }
   },
   plugins: [],
 }

@@ -25,18 +25,18 @@ export function App() {
   return (
     <main className="grid grid-cols-mainContainer bg-gradient-to-r from-[#121922]" >
       <Aside/>
-      <div className="h-full pt-[9vh] pr-[24vh]" id="hero">
-        <Hero />
-        <div className="space-y-7" id="aboutMe">
+      <div className="" id="hero">
+        {/* <Hero /> */}
+        {/* <div className="space-y-7" id="aboutMe">
           <AboutMe/>
           <Divider id="jaEstudei" />
           <JaEstudei tecnologia={['html5', 'css3', 'javascript', 'react','tailwindcss', 'typescript', 'sass', 'redux','github', 'grunt', 'jquery', 'vuejs']}/>
           <Divider id="mainProjects" />
-        </div>
+        </div> */}
 
         {/* Secão 1 */}
-        <NameSection name="Projetos" />
-          <Carousel className="" cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
+        {/* <NameSection name="Projetos" /> */}
+          {/* <Carousel className="" cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
             autoplay={true} autoplayInterval={5000} speed={800} withoutControls={true} animation="zoom" >
             <Projects tecnologiaUsada={['html5', 'css3', 'javascript', 'sass']}
               name="Guardiões da Galáxia Vol.3" 
@@ -80,12 +80,12 @@ export function App() {
               linkGithub="https://github.com/SuaveGreen/site_responsivo" 
               linkSite="https://site-responsivo-plum.vercel.app/"
             />
-          </Carousel>
-        <Divider id="intensivos" />
+          </Carousel> */}
+        {/* <Divider id="intensivos" /> */}
 
         {/* Secão 2 */}
-        <NameSection name="Intensivos" />
-        <Carousel cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
+        {/* <NameSection name="Intensivos" /> */}
+        {/* <Carousel cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
           autoplay={true} autoplayInterval={5000} speed={800} withoutControls={true} animation="zoom">
           <Projects tecnologiaUsada={['react', 'tailwindcss', 'typescript', 'html5']}
             name="Expert notes" 
@@ -130,11 +130,11 @@ export function App() {
             linkGithub="https://github.com/SuaveGreen/audio-book" 
             linkSite="https://audio-book-roan.vercel.app"
           />  
-        </Carousel>
-        <img 
+        </Carousel> */}
+        {/* <img 
           src="https://capsule-render.vercel.app/api?type=waving&color=C6E5B1&height=80&section=footer"
           className="w-full pt-28"
-        />
+        /> */}
         <Link
           activeClass="active"
           to="hero"
