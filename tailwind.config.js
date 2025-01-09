@@ -38,7 +38,7 @@ export default {
       'celular': '320px',
       // => @media (min-width: 320px) { ... }
 
-      // 'sm': '640px',
+      'celularx': '640px',
       // => @media (min-width: 640px) sm { ... }
 
       'tablet': '768px',

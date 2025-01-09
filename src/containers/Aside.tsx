@@ -21,15 +21,18 @@ export function Aside() {
   // {`transition-all duration-500 ${!isVisible ? 'opacity-100 visible ' : 'opacity-0 invisible '} `}
 
   // bg-[#12141a] bg-gradient-to-l from-[#161f2b]
+  // bg-[#0c0e13] bg-gradient-to-r
 
   return (
     <aside>
-      <div className="fixed left-0 top-0 bg-[#0c0e13] bg-gradient-to-r h-screen">
-        <div className="flex flex-col p-4 py-6">
+      <div className="fixed left-0 top-0  h-full
+        celular:bg-slate-400 celularx:bg-red-400 tablet:bg-orange-300 tabletx:bg-yellow-300 notebook:bg-green-400 monitor:bg-teal-700
+      ">
+        <div className="flex flex-col p-4 py-6 h-full">
           <div className="mb-7">
             <img src="https://github.com/suavegreen.png" className="rounded-full size-12"/>
           </div>
-          <div className="flex flex-col-reverse gap-[28.6vh] h-auto">
+          <div className="flex flex-col-reverse justify-between h-[100%]">
             <div className="grid gap-6 justify-center">
               <div className="gap-2 hidden">
                 <User className="size-5 text-verdePastel" />
