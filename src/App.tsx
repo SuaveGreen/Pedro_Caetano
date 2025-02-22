@@ -1,6 +1,6 @@
 import { Aside } from "./containers/Aside";
 import { Divider } from "./components/Divider";
-import { AboutMe } from "./containers/AboutMe";
+// import { AboutMe } from "./containers/AboutMe";
 import { JaEstudei } from "./containers/JaEstudei";
 // import { NameSection } from "./components/NameSection";
 // import { Projects } from "./components/Projects";
