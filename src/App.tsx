@@ -1,7 +1,7 @@
 import { Aside } from "./containers/Aside";
-// import { Divider } from "./components/Divider";
-// import { AboutMe } from './containers/AboutMe'
-// import { JaEstudei } from "./containers/JaEstudei";
+import { Divider } from "./components/Divider";
+import { AboutMe } from "./containers/AboutMe";
+import { JaEstudei } from "./containers/JaEstudei";
 // import { NameSection } from "./components/NameSection";
 // import { Projects } from "./components/Projects";
 // import guardians from './assets/guardians.png';
@@ -12,10 +12,10 @@ import { Aside } from "./containers/Aside";
 // import balcar from './assets/balcarSite.png';
 // import xbox from './assets/xbox.png';
 // import responsivo from './assets/responsive.png';
-// import { Hero } from "./containers/Hero";
+import { Hero } from "./containers/Hero";
 // import Carousel from "nuka-carousel";
 import { ButtonTop } from "./components/ButtonTop";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 // import Teste from "./components/Teste";
 
@@ -23,20 +23,36 @@ import { Link } from 'react-scroll';
 
 export function App() {
   return (
-    <main className="grid grid-cols-mainContainer bg-gradient-to-r from-[#121922]" >
-      <Aside/>
+    // grid grid-cols-mainContainer
+    <main className=" bg-gradient-to-r from-[#121922]">
+      <Aside />
       <div className="" id="hero">
-        {/* <Hero /> */}
-        {/* <div className="space-y-7" id="aboutMe">
-          <AboutMe/>
+        <Hero />
+        <div className="space-y-7" id="aboutMe">
+          {/* <AboutMe /> */}
           <Divider id="jaEstudei" />
-          <JaEstudei tecnologia={['html5', 'css3', 'javascript', 'react','tailwindcss', 'typescript', 'sass', 'redux','github', 'grunt', 'jquery', 'vuejs']}/>
+          <JaEstudei
+            tecnologia={[
+              "html5",
+              "css3",
+              "javascript",
+              "react",
+              "tailwindcss",
+              "typescript",
+              "sass",
+              "redux",
+              "github",
+              "grunt",
+              "jquery",
+              "vuejs",
+            ]}
+          />
           <Divider id="mainProjects" />
-        </div> */}
+        </div>
 
         {/* Secão 1 */}
         {/* <NameSection name="Projetos" /> */}
-          {/* <Carousel className="" cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
+        {/* <Carousel className="" cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
             autoplay={true} autoplayInterval={5000} speed={800} withoutControls={true} animation="zoom" >
             <Projects tecnologiaUsada={['html5', 'css3', 'javascript', 'sass']}
               name="Guardiões da Galáxia Vol.3" 
@@ -147,5 +163,5 @@ export function App() {
         </Link>
       </div>
     </main>
-  )
+  );
 }

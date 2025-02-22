@@ -19,7 +19,7 @@ export default {
         }
       },
       gridTemplateColumns: {
-        'mainContainer': '65vh minmax(100px, 1fr)',
+        'mainContainer': '50vh minmax(50px, 1fr)',
       },
       colors: {
         verdePastel: '#C6E5B1',

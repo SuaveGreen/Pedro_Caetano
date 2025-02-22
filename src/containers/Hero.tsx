@@ -1,20 +1,38 @@
 import { ArrowDown } from "lucide-react";
+import { TypeAnimation } from "react-type-animation";
 
 export function Hero() {
   return (
-    <div className="">
-      <h2 className="font-mono font-bold">
-        Olá!
-        <p>Eu sou:</p>
-        <img 
-          src="https://readme-typing-svg.herokuapp.com/?color=C6E5B1&size=300&duration=3500&center=false&vCenter=true&repeat=true&width=5000&lines=Pedro+Caetano;Programador+Front-End;Estudante+de+React.Js"
-          className=""
-        />
-        <p className="font-normal font-mono">
-          Conhecer mais
-          <ArrowDown className="animate-bounce" />
-        </p>
-      </h2>
+    <div className="justify-center align-middle items-center h-screen">
+      <div className="ml-[11.3vh]">
+        <div className="ml-[3.5vh] pt-[75%] font-mono font-bold">
+          <div className="text-3xl">
+            <h2>Olá!</h2>
+            <h2>Eu sou:</h2>
+            <TypeAnimation
+              className="inline-block font-extralight text-xl text-[#C6E5B1]"
+              sequence={[
+                "Pedro Caetano",
+                1000, // wait 1s before replacing "ADS" with "Front-End"
+                "Estudante de ADS",
+                2000,
+                "Estudante de Front-End",
+                2000,
+                "Estudante de React.Js",
+                2000,
+                "Pedro Caetano",
+              ]}
+              wrapper="span"
+              speed={15}
+              // repeat={Infinity}
+            />
+          </div>
+          <p className="font-extralight text-sm font-mono flex mt-[10vh] gap-3">
+            Conhecer mais
+            <ArrowDown className="animate-bounce size-4 mt-[5px]" />
+          </p>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
