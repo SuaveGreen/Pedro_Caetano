@@ -5,12 +5,12 @@ export function Hero() {
   return (
     <div className="justify-center align-middle items-center h-screen">
       <div className="ml-[11.3vh]">
-        <div className="ml-[3.5vh] pt-[75%] font-mono font-bold">
+        <div className="ml-[1.5vh] pt-[100%] font-mono font-bold">
           <div className="text-3xl">
             <h2>Olá!</h2>
             <h2>Eu sou:</h2>
             <TypeAnimation
-              className="inline-block font-extralight text-xl text-[#C6E5B1]"
+              className=" inline-block font-extralight text-xl text-[#C6E5B1]"
               sequence={[
                 "Pedro Caetano",
                 1000, // wait 1s before replacing "ADS" with "Front-End"
