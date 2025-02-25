@@ -29,7 +29,7 @@ export function App() {
         <CarouselProjects/>
         <img 
           src="https://capsule-render.vercel.app/api?type=waving&color=C6E5B1&height=80&section=footer"
-          className="w-full"
+          className="w-full mt-5"
         />
         <Link
           activeClass="active"

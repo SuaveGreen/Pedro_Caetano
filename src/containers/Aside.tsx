@@ -4,13 +4,13 @@ import {
   // Certificate,
   Code,
   IdentificationBadge,
-  EnvelopeSimple,
+  // EnvelopeSimple,
   // FileCode,
-  InstagramLogo,
+  // InstagramLogo,
   FrameCorners,
   GraduationCap,
 } from "@phosphor-icons/react";
-import { User, Linkedin, ChevronRight, Phone } from "lucide-react";
+import { User, Linkedin, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
@@ -82,30 +82,30 @@ export function Aside() {
                 </p>
               </a>
             </div>
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <a href="*">
                 <EnvelopeSimple className="text-verdePastel size-6" />
                 <p className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono hidden">
                   Gmail
                 </p>
               </a>
-            </div>
-            <div className="flex gap-2">
+            </div> */}
+            {/* <div className="flex gap-2">
               <a href="*">
                 <Phone className="text-verdePastel size-6" />
                 <p className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono hidden">
                   Telefone
                 </p>
               </a>
-            </div>
-            <div className="flex gap-2">
+            </div> */}
+            {/* <div className="flex gap-2">
               <a href="*">
                 <InstagramLogo className="text-verdePastel size-6" />
                 <p className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono hidden">
                   Instagram
                 </p>
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="grid gap-6 justify-center">
             <div>
