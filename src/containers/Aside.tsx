@@ -1,13 +1,14 @@
 import {
   Stack,
   GithubLogo,
-  BookOpenText,
+  // Certificate,
   Code,
   IdentificationBadge,
   EnvelopeSimple,
   FileCode,
   InstagramLogo,
   FrameCorners,
+  GraduationCap,
 } from "@phosphor-icons/react";
 import { User, Linkedin, ChevronRight, Phone } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -139,7 +140,7 @@ export function Aside() {
                   <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
                 </a>
                 <a className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
-                  <BookOpenText className="size-6" />
+                  <GraduationCap className="size-6" />
                 </a>
               </Link>
             </div>

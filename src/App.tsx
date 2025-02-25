@@ -3,17 +3,17 @@ import { Divider } from "./components/Divider";
 import { AboutMe } from "./containers/AboutMe";
 import { JaEstudei } from "./containers/JaEstudei";
 // import { NameSection } from "./components/NameSection";
-// import { Projects } from "./components/Projects";
-// import guardians from './assets/guardians.png';
+import { Projects } from "./components/Projects";
+import guardians from './assets/guardians.png';
 // import twitter from './assets/twitterUi.png';
 // import applePage from './assets/apple.png';
 // import audioBook from './assets/audioBook.png';
-// import expertNote from './assets/expertNote.png';
+import expertNote from './assets/expertNote.png';
 // import balcar from './assets/balcarSite.png';
 // import xbox from './assets/xbox.png';
 // import responsivo from './assets/responsive.png';
 import { Hero } from "./containers/Hero";
-// import Carousel from "nuka-carousel";
+import Carousel from "nuka-carousel";
 import { ButtonTop } from "./components/ButtonTop";
 import { Link } from "react-scroll";
 
@@ -33,22 +33,23 @@ export function App() {
           <Divider id="jaEstudei" />
           <JaEstudei
             tecnologia={[
-              "react",
-              "tailwindcss",
-              "typescript",
-              "javascript",
-              "html5",
-              "css3",
-              "git",
-              "github",
+              { nome: "react", valor: 65 },
+              { nome: "tailwindcss", valor: 70 },
+              { nome: "typescript", valor: 55 },
+              { nome: "javascript", valor: 45 },
+              { nome: "html5", valor: 75 },
+              { nome: "css3", valor: 70 },
+              { nome: "git", valor: 65 },
+              { nome: "github", valor: 70 }
             ]}
           />
-          <Divider id="mainProjects" />
+
+          {/* <Divider id="mainProjects" /> */}
         </div>
 
         {/* Secão 1 */}
         {/* <NameSection name="Projetos" /> */}
-        {/* <Carousel className="" cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
+        <Carousel className="" cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
             autoplay={true} autoplayInterval={5000} speed={800} withoutControls={true} animation="zoom" >
             <Projects tecnologiaUsada={['html5', 'css3', 'javascript', 'sass']}
               name="Guardiões da Galáxia Vol.3" 
@@ -60,7 +61,7 @@ export function App() {
               linkGithub="https://github.com/SuaveGreen/guardioes_da_galaxia" 
               linkSite="https://guardioes-da-galaxia-tau.vercel.app/"
             />
-            <Projects tecnologiaUsada={['html5', 'css3', 'javascript', 'sass']}
+            {/* <Projects tecnologiaUsada={['html5', 'css3', 'javascript', 'sass']}
               name="Balcar" 
               text="Balcar é um site Front-End de caronas paga, onde há uma descrição 
                 de como funciona, ver quais as cidades disponíveis, baixar o aplicativo, 
@@ -91,13 +92,13 @@ export function App() {
               path={responsivo}
               linkGithub="https://github.com/SuaveGreen/site_responsivo" 
               linkSite="https://site-responsivo-plum.vercel.app/"
-            />
-          </Carousel> */}
+            /> */}
+          </Carousel>
         {/* <Divider id="intensivos" /> */}
 
         {/* Secão 2 */}
         {/* <NameSection name="Intensivos" /> */}
-        {/* <Carousel cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
+        <Carousel cellSpacing={25} wrapAround={true} swiping={false} cellAlign="center"  
           autoplay={true} autoplayInterval={5000} speed={800} withoutControls={true} animation="zoom">
           <Projects tecnologiaUsada={['react', 'tailwindcss', 'typescript', 'html5']}
             name="Expert notes" 
@@ -110,7 +111,7 @@ export function App() {
             linkGithub="https://github.com/SuaveGreen/Bloco_de_notas" 
             linkSite="https://expert-notes-green.vercel.app"
           />        
-          <Projects tecnologiaUsada={['react', 'tailwindcss', 'typescript', 'html5']}
+          {/* <Projects tecnologiaUsada={['react', 'tailwindcss', 'typescript', 'html5']}
             name="Twitter" 
             text="Este site foi criado em um MasterClass junto com o professor 
               Diego Fernandes, da RocketSeat. O principal intuito desta 
@@ -141,8 +142,8 @@ export function App() {
             path={audioBook}
             linkGithub="https://github.com/SuaveGreen/audio-book" 
             linkSite="https://audio-book-roan.vercel.app"
-          />  
-        </Carousel> */}
+          />   */}
+        </Carousel>
         {/* <img 
           src="https://capsule-render.vercel.app/api?type=waving&color=C6E5B1&height=80&section=footer"
           className="w-full pt-28"

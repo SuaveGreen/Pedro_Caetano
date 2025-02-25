@@ -8,7 +8,7 @@ export function IconMiniature(props: IconDev) {
 
   return (
     <div>
-      <img src={reactImg} className="w-6 h-6 mr-3" title={props.nome} />
+      <img src={reactImg} className=" size-6 mr-3" title={props.nome} />
     </div>
   );
 }
