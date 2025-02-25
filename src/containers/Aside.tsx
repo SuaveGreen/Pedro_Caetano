@@ -33,7 +33,7 @@ export function Aside() {
 
   return (
     <aside
-      className={`fixed left-0 top-0 h-screen z-50 bg-[#0c0e13] bg-gradient-to-r     
+      className={`fixed left-0 top-0 h-[100svh] z-50 bg-[#0c0e13] bg-gradient-to-r     
         transition-all duration-500 ${
           !isVisible ? "opacity-100 visible " : "opacity-0 invisible "
         } ;`}
