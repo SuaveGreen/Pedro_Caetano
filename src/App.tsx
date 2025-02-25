@@ -1,6 +1,6 @@
 import { Aside } from "./containers/Aside";
 import { Divider } from "./components/Divider";
-// import { AboutMe } from "./containers/AboutMe";
+import { AboutMe } from "./containers/AboutMe";
 import { JaEstudei } from "./containers/JaEstudei";
 // import { NameSection } from "./components/NameSection";
 // import { Projects } from "./components/Projects";
@@ -28,23 +28,19 @@ export function App() {
       <Aside />
       <div className="" id="hero">
         <Hero />
-        <div className="space-y-7" id="aboutMe">
-          {/* <AboutMe /> */}
+        <div id="aboutMe">
+          <AboutMe />
           <Divider id="jaEstudei" />
           <JaEstudei
             tecnologia={[
-              "html5",
-              "css3",
-              "javascript",
               "react",
               "tailwindcss",
               "typescript",
-              "sass",
-              "redux",
+              "javascript",
+              "html5",
+              "css3",
+              "git",
               "github",
-              "grunt",
-              "jquery",
-              "vuejs",
             ]}
           />
           <Divider id="mainProjects" />
@@ -156,7 +152,7 @@ export function App() {
           to="hero"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={30}
           duration={1000}
         >
           <ButtonTop />

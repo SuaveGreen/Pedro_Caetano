@@ -113,7 +113,7 @@ export function Aside() {
                 to="aboutMe"
                 spy={true}
                 smooth={true}
-                offset={-130}
+                offset={30}
                 duration={800}
               >
                 <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
@@ -131,7 +131,7 @@ export function Aside() {
                 to="jaEstudei"
                 spy={true}
                 smooth={true}
-                offset={130}
+                offset={30}
                 duration={800}
               >
                 <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
