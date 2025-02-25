@@ -5,7 +5,7 @@ import {
   Code,
   IdentificationBadge,
   EnvelopeSimple,
-  FileCode,
+  // FileCode,
   InstagramLogo,
   FrameCorners,
   GraduationCap,
@@ -33,7 +33,7 @@ export function Aside() {
 
   return (
     <aside
-      className={`fixed left-0 top-0 h-[100svh] z-50 bg-[#0c0e13] bg-gradient-to-r     
+      className={`fixed left-0 top-0 h-screen z-50 bg-[#0c0e13] bg-gradient-to-r     
         transition-all duration-500 ${
           !isVisible ? "opacity-100 visible " : "opacity-0 invisible "
         } ;`}
@@ -49,13 +49,13 @@ export function Aside() {
           <div className="grid gap-6 justify-center">
             <div className="gap-2 hidden">
               <User className="size-5 text-verdePastel" />
-              <h1 className="text-verdePastel hover:translate-x-3 duration-300 hover:cursor-default font-mono">
+              <h1 className="text-verdePastel duration-300 hover:cursor-default font-mono">
                 Pedro Caetano
               </h1>
             </div>
             <div className="gap-2 hidden">
               <Stack className="size-5 text-verdePastel" />
-              <h2 className="hover:translate-x-3 duration-300 hover:cursor-default font-mono hidden">
+              <h2 className="duration-300 hover:cursor-default font-mono hidden">
                 Front-End
               </h2>
             </div>
@@ -117,13 +117,13 @@ export function Aside() {
                 offset={30}
                 duration={800}
               >
-                <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
+                <span className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
                   Sobre mim
                   <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
-                </a>
-                <a className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
+                </span>
+                <span className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
                   <IdentificationBadge className="size-6" />
-                </a>
+                </span>
               </Link>
             </div>
             <div>
@@ -135,13 +135,13 @@ export function Aside() {
                 offset={30}
                 duration={800}
               >
-                <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
+                <span className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
                   Conhecimento
                   <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
-                </a>
-                <a className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
+                </span>
+                <span className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
                   <GraduationCap className="size-6" />
-                </a>
+                </span>
               </Link>
             </div>
             <div>
@@ -150,20 +150,20 @@ export function Aside() {
                 to="mainProjects"
                 spy={true}
                 smooth={true}
-                offset={20}
+                offset={-30}
                 duration={800}
               >
-                <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
+                <span className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
                   Projetos
                   <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
-                </a>
-                <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group">
-                  <FileCode className="size-6" />
-                </a>
+                </span>
+                <span className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group">
+                  <Code className="size-6" />
+                </span>
               </Link>
             </div>
             <div>
-              <Link
+              {/* <Link
                 activeClass="active"
                 to="intensivos"
                 spy={true}
@@ -176,9 +176,9 @@ export function Aside() {
                   <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
                 </a>
                 <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group">
-                  <Code className="size-6" />
+                  <Certificate className="size-6" />
                 </a>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

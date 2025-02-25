@@ -18,13 +18,12 @@ export function ButtonTop() {
   //
 
   return (
-    <a
-      href="#hero"
+    <span
       className={`transition-all duration-500 ${
         !isVisible ? "opacity-100 visible " : "opacity-0 invisible "
       } fixed right-10 bottom-10 animate-bounce`}
     >
       <ArrowUp className="bg-[#6689be28] h-12 w-12 p-2 rounded-full" />
-    </a>
+    </span>
   );
 }

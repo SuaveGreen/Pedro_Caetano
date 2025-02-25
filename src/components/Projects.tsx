@@ -13,9 +13,9 @@ interface Projects {
 
 export function Projects(props: Projects) {
   return(
-    <div className="ml-[10vh] w-[31.5vh] py-[3svh] h-[50%]">
+    <div className="ml-[10vh] w-[31.5vh] h-full">
       <div className="">
-        <div className="space-y-3">
+        <div className="space-y-2 h-[100%]">
           <h2 className="text-verdePastel text-xl">
             {props.name}
           </h2>
@@ -23,7 +23,7 @@ export function Projects(props: Projects) {
             {props.text}
           </p>
           <a href={props.linkSite} target="_blank">
-            <img src={props.path} alt={props.name} title={props.name} className="rounded-3xl  h-full w-full py-3 hover:scale-105"/>
+            <img src={props.path} alt={props.name} title={props.name} className="rounded-3xl  h-[100%] w-[100%] py-3 hover:scale-105"/>
           </a>
           <div className="flex justify-between">
             <div className="flex">

@@ -14,7 +14,7 @@ interface JaEstudeiProps {
 
 export function JaEstudei(props: JaEstudeiProps ) {
   return (
-    <div className="ml-[11.3vh] h-screen">
+    <div id="jaEstudei" className="ml-[11.3vh] h-screen">
       <NameSection name="Conhecimento em" />
       <div>
         <div>

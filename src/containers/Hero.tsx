@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export function Hero() {
   return (
-    <div className="justify-center align-middle items-center h-[80svh]">
+    <div id="hero" className="justify-center align-middle items-center h-[80svh]">
       <div className="ml-[11.3vh]">
         <div className="ml-[1.5vh] pt-[100%] font-mono font-bold">
           <div className="text-3xl">
