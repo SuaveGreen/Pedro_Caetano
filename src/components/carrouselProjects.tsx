@@ -13,7 +13,7 @@ import responsivo from '../assets/responsive.png';
 export function CarouselProjects() {
   return (
     <div id="mainProjects">
-      <Carousel className="pb-[2svh]" cellSpacing={25} wrapAround={true} swiping={true} cellAlign="center"  
+      <Carousel className="pb-[3svh]" cellSpacing={25} wrapAround={true} swiping={true} cellAlign="center"  
       autoplay={true} autoplayInterval={6000} speed={1000} withoutControls={true} animation="zoom" >
 
         <Projects tecnologiaUsada={['react', 'tailwindcss', 'typescript', 'html5', 'css3']}

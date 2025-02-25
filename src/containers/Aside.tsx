@@ -33,12 +33,12 @@ export function Aside() {
 
   return (
     <aside
-      className={`fixed left-0 top-0 h-screen z-50 bg-[#0c0e13] bg-gradient-to-r     
+      className={`fixed left-0 top-0 h-[100dvh] z-50 bg-[#0c0e13] bg-gradient-to-r     
         transition-all duration-500 ${
           !isVisible ? "opacity-100 visible " : "opacity-0 invisible "
         } ;`}
     >
-      <div className="flex flex-col p-4 py-6 h-full">
+      <div className="flex flex-col p-4 py-6 h-[100dvh]">
         <div className="mb-7">
           <img
             src="https://github.com/suavegreen.png"
