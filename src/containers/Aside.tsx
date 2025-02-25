@@ -33,7 +33,7 @@ export function Aside() {
 
   return (
     <aside
-      className={`fixed left-0 top-0 h-[100svh] z-50 bg-[#0c0e13] bg-gradient-to-r     
+      className={`fixed left-0 top-0 h-screen z-50 bg-[#0c0e13] bg-gradient-to-r     
         transition-all duration-500 ${
           !isVisible ? "opacity-100 visible " : "opacity-0 invisible "
         } ;`}
@@ -45,7 +45,7 @@ export function Aside() {
             className="rounded-full size-12"
           />
         </div>
-        <div className="flex flex-col-reverse justify-between h-[100%]">
+        <div className="flex flex-col-reverse justify-between h-screen">
           <div className="grid gap-6 justify-center">
             <div className="gap-2 hidden">
               <User className="size-5 text-verdePastel" />
