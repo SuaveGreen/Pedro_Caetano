@@ -58,7 +58,7 @@ export function CarouselProjects() {
             disponíveis." 
           path={xbox}
           linkGithub="https://site-xbox.vercel.app" 
-          linkSite="https://guardioes-da-galaxia-tau.vercel.app/"
+          linkSite="https://site-xbox.vercel.app"
         />
         <Projects tecnologiaUsada={['html5', 'css3', 'javascript']}
           name="Site responsivo" 
