@@ -16,7 +16,7 @@ export function Hero() {
                 1000, // wait 1s before replacing "ADS" with "Front-End"
                 "Estudante de ADS",
                 2000,
-                "Estudante de Front-End",
+                "Estudante Front-End",
                 2000,
                 "Estudante de React.Js",
                 2000,
