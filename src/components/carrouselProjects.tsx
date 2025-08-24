@@ -57,7 +57,7 @@ export function CarouselProjects() {
             algumas informações da marca, e também alguns produtos e serviços 
             disponíveis." 
           path={xbox}
-          linkGithub="https://github.com/SuaveGreen/guardioes_da_galaxia" 
+          linkGithub="https://site-xbox.vercel.app" 
           linkSite="https://guardioes-da-galaxia-tau.vercel.app/"
         />
         <Projects tecnologiaUsada={['html5', 'css3', 'javascript']}
