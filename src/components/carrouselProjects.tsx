@@ -57,7 +57,7 @@ export function CarouselProjects() {
             algumas informações da marca, e também alguns produtos e serviços 
             disponíveis." 
           path={xbox}
-          linkGithub="https://site-xbox.vercel.app" 
+          linkGithub="https://github.com/SuaveGreen/Site_Xbox" 
           linkSite="https://site-xbox.vercel.app"
         />
         <Projects tecnologiaUsada={['html5', 'css3', 'javascript']}
