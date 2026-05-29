@@ -19,6 +19,8 @@ export function Hero() {
             2000,
             "Estudante de React.Js",
             2000,
+            "Estudante de C#",
+            2000,
             "Pedro Caetano",
           ]}
           wrapper="span"
