@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export function Hero() {
   return (
-    <div id="hero" className="flex flex-col min-h-[35dvh] px-24 mb-32 justify-end font-mono font-bold">
+    <div id="hero" className="flex flex-col min-h-[23dvh] px-24 justify-end font-mono font-bold">
       <div>
         <h1 className="text-3xl tracking-wide">Olá! <br />
           Eu sou:</h1>

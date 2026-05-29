@@ -17,7 +17,7 @@ export function Aside() {
 
   const toggleVisibility = () => {
     const currentScrollPos = window.scrollY;
-    const isVisible = currentScrollPos <= 500;
+    const isVisible = currentScrollPos <= 425;
     setIsVisible(isVisible);
   };
 
@@ -28,11 +28,11 @@ export function Aside() {
 
   return (
     <aside
-      className={`fixed z-50 transition-all duration-500 ${!isVisible ? "opacity-100 visible" : "opacity-0 invisible"
-        } top-4 left-4 flex flex-col items-center pt-6`}
+      className={`fixed z-50 transition-all duration-500 ${!isVisible ? "visible" : "opacity-0 invisible"
+        } bottom-4 left-4 flex flex-col items-center pt-6`}
     >
       {/* 1. FOTO DE PERFIL (Sobreposta) */}
-      <div className="absolute top-0 z-10 w-16 h-16 rounded-full overflow-hidden">
+      <div className="absolute top-0 z-10 w-20 h-20 rounded-full overflow-hidden">
         <img
           src="https://github.com/suavegreen.png"
           alt="Pedro Caetano"
@@ -42,23 +42,23 @@ export function Aside() {
 
       {/* 2. CAIXA DO MENU (Cinza flutuante) */}
       <div
-        className={`w-16 bg-[#12161f] bg-gradient-to-t from-[#191f2a] backdrop-blur-sm rounded-b-3xl rounded-t-xl flex flex-col items-center transition-all duration-300 overflow-hidden pt-10 pb-4 ${isOpen ? "max-h-[500px]" : "max-h-[85px]"
+        className={`w-20 bg-[#12161f] bg-gradient-to-t from-[#191f2a] backdrop-blur-sm rounded-b-3xl rounded-t-xl flex flex-col-reverse items-center transition-all duration-300 overflow-hidden pt-16 ${isOpen ? "max-h-[21.5rem]" : "max-h-[6.7rem] opacity-40"
           }`}
       >
         {/* BOTÃO HAMBÚRGUER */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="p-2 text-verdePastel hover:text-white transition-colors"
+          className="p-4 text-verdePastel hover:text-white transition-colors"
         >
           {isOpen ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
 
         {/* 3. CONTEÚDO DO MENU (Links e Ícones) */}
-        <div className="flex flex-col justify-between h-full w-full items-center mt-4 opacity-100 transition-opacity duration-300">
+        <div className="flex flex-col justify-between h-full w-full items-center mt-2 opacity-100 transition-opacity duration-300">
 
           {/* Navegação Superior */}
           <div className="grid gap-6 justify-center">
-            <Link activeClass="active" to="aboutMe" spy={true} smooth={true} offset={30} duration={800}>
+            <Link activeClass="active" to="aboutMe" spy={true} smooth={true} offset={-55} duration={800}>
               <span className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer hover:scale-110 transition-transform">
                 <User className="size-6" />
               </span>

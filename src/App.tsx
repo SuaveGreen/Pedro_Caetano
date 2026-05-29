@@ -12,7 +12,7 @@ import Carousel from "./components/carroseu";
 export function App() {
   return (
     // grid grid-cols-mainContainer
-    <main className=" bg-gradient-to-r from-[#121922]">
+    <main className="bg-gradient-to-r from-[#121922]">
       <Aside />
       <Hero />
       <AboutMe />

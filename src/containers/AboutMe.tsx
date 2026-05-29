@@ -6,7 +6,7 @@ export function AboutMe() {
 
   const toggleVisibility = () => {
     const currentScrollPos = window.scrollY;
-    const isVisible = currentScrollPos < 500; // Ajuste este valor conforme necessário
+    const isVisible = currentScrollPos < 425; // Ajuste este valor conforme necessário
     setIsVisible(isVisible);
   };
 
@@ -20,7 +20,7 @@ export function AboutMe() {
   return (
     <div
       id="aboutMe"
-      className={`transition-opacity  h-[100%] px-4 ${isVisible ? "opacity-0" : "opacity-100"
+      className={`transition-opacity mt-16 ${isVisible ? "opacity-0" : "opacity-100"
         }`}
     >
       <NameSection name="Sobre Mim" />
