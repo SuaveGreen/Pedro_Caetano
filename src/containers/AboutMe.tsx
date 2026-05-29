@@ -27,7 +27,7 @@ export function AboutMe() {
       <p className="text-lg font-light indent-6 text-justify w-[31.5vh]">
         <span className="text-3xl pl-0.5 pr-[.7px]">A</span>
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aliquid voluptate exercitationem quos minima repellendus doloribus accusantium necessitatibus sapiente voluptatibus deleniti neque, placeat libero perspiciatis ad ipsam architecto nemo aspernatur.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aliquid voluptate exercitationem quos minima repellendus doloribus accusantium necessitatibus sapiente voluptatibus deleniti neque, placeat libero perspiciatis ad ipsam architecto nemo aspernaturr.
 
         {/* tualmente estou me graduando em Análise e Desenvolvimento de sistemas
         pela UniCesumar tendo como foco me capacitar profissionalmente e me
