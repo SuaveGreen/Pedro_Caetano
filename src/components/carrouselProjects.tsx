@@ -9,13 +9,33 @@ import balcar from '../assets/balcarSite.png';
 import xbox from '../assets/xbox.png';
 import iprPasta from '../assets/iprMusicas.png';
 import responsivo from '../assets/responsive.png';
+// import { CaretLeft, CaretRight } from "@phosphor-icons/react";
 
 export function CarouselProjects() {
+
+  // autoplay={true} autoplayInterval={6000}
+
   return (
     <div id="mainProjects">
-      <Carousel className="pb-[3svh]" cellSpacing={25} wrapAround={true} swiping={true} cellAlign="center"  
-      autoplay={true} autoplayInterval={6000} speed={1000} withoutControls={true} animation="zoom" >
+      <Carousel className="pb-[10%] h-[100%]" cellSpacing={25} wrapAround={true} swiping={true} cellAlign="center"  
+      speed={1000} animation="zoom" withoutControls
 
+      // renderBottomCenterControls={ null }
+      // renderCenterRightControls={null}
+      // renderCenterLeftControls={null}
+
+      // renderBottomCenterControls={({ currentSlide, slideCount }) => (
+      //   <div className="pb-[25vh]">{currentSlide + 1} de {slideCount} </div>
+      // )}
+      
+      // renderBottomRightControls={({ nextSlide }) => (
+      //   <CaretRight onClick={nextSlide} />
+      // )}
+
+      // renderBottomLeftControls={({ previousSlide }) => (
+      //   <CaretLeft onClick={previousSlide} className="ml-[10vh]"/>
+      // )}     
+      >
         <Projects tecnologiaUsada={['react', 'tailwindcss', 'typescript', 'html5', 'css3']}
           name="Pasta de Música" 
           text="Este site tem a função de reunir todas as músicas em um único site, 
@@ -57,8 +77,8 @@ export function CarouselProjects() {
             algumas informações da marca, e também alguns produtos e serviços 
             disponíveis." 
           path={xbox}
-          linkGithub="https://github.com/SuaveGreen/guardioes_da_galaxia" 
-          linkSite="https://guardioes-da-galaxia-tau.vercel.app/"
+          linkGithub="https://github.com/SuaveGreen/Site_Xbox" 
+          linkSite="https://site-xbox.vercel.app/"
         />
         <Projects tecnologiaUsada={['html5', 'css3', 'javascript']}
           name="Site responsivo" 

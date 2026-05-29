@@ -1,38 +1,38 @@
 import { ArrowDown } from "lucide-react";
+import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
 
 export function Hero() {
   return (
-    <div id="hero" className="justify-center align-middle items-center h-[80svh]">
-      <div className="ml-[11.3vh]">
-        <div className="ml-[1.5vh] pt-[100%] font-mono font-bold">
-          <div className="text-3xl">
-            <h2>Olá!</h2>
-            <h2>Eu sou:</h2>
-            <TypeAnimation
-              className=" inline-block font-extralight text-xl text-[#C6E5B1]"
-              sequence={[
-                "Pedro Caetano",
-                1000, // wait 1s before replacing "ADS" with "Front-End"
-                "Estudante de ADS",
-                2000,
-                "Estudante de Front-End",
-                2000,
-                "Estudante de React.Js",
-                2000,
-                "Pedro Caetano",
-              ]}
-              wrapper="span"
-              speed={15}
-              // repeat={Infinity}
-            />
-          </div>
-          <p className="font-extralight text-sm font-mono flex mt-[10vh] gap-3">
-            Conhecer mais
-            <ArrowDown className="animate-bounce size-4 mt-[5px]" />
-          </p>
-        </div>
+    <div id="hero" className="flex flex-col min-h-[35dvh] px-24 mb-32 justify-end font-mono font-bold">
+      <div>
+        <h1 className="text-3xl tracking-wide">Olá! <br />
+          Eu sou:</h1>
+        <TypeAnimation
+          className="  font-extralight text-lg tracking-tight text-[#C6E5B1]"
+          sequence={[
+            "Pedro Caetano",
+            1000, // wait 1s before replacing "ADS" with "Front-End"
+            "Estudante de ADS",
+            2000,
+            "Estudante de Front-End",
+            2000,
+            "Estudante de React.Js",
+            2000,
+            "Pedro Caetano",
+          ]}
+          wrapper="span"
+          speed={15}
+        // repeat={Infinity}
+        />
       </div>
+      <Link activeClass="active" to="aboutMe" spy={true} smooth={true} offset={-48} duration={800}
+        className="pt-6 inline-flex font-extralight text-sm font-mono">
+        Conhecer mais
+        <span>
+          <ArrowDown className="animate-bounce size-4 ml-2" />
+        </span>
+      </Link>
     </div>
   );
 }

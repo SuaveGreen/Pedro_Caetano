@@ -4,6 +4,6 @@ interface SectionName {
 
 export function NameSection(props: SectionName) {
   return (
-    <h1 className="text-3xl pb-14 pt-[50%] text-verdePastel">{props.name}</h1>
+    <h1 className="text-3xl pb-12 pl-[6.75rem] text-verdePastel">{props.name}</h1>
   );
 }

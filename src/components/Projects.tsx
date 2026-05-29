@@ -13,7 +13,7 @@ interface Projects {
 
 export function Projects(props: Projects) {
   return(
-    <div className="ml-[10vh] w-[31.5vh] h-full">
+    <div className="ml-[10vh] w-[31.5vh]">
       <div className="">
         <div className="space-y-2 h-[100%]">
           <h2 className="text-verdePastel text-xl">

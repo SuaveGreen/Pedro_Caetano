@@ -1,25 +1,23 @@
 import {
-  Stack,
+  // Stack,
   GithubLogo,
-  // Certificate,
   Code,
-  IdentificationBadge,
-  // EnvelopeSimple,
-  // FileCode,
-  // InstagramLogo,
+  // IdentificationBadge,
   FrameCorners,
   GraduationCap,
+  User,
 } from "@phosphor-icons/react";
-import { User, Linkedin, ChevronRight } from "lucide-react";
+import { Linkedin, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 export function Aside() {
   const [isVisible, setIsVisible] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleVisibility = () => {
     const currentScrollPos = window.scrollY;
-    const isVisible = currentScrollPos <= 400; // Ajuste este valor conforme necessário
+    const isVisible = currentScrollPos <= 500;
     setIsVisible(isVisible);
   };
 
@@ -28,159 +26,71 @@ export function Aside() {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  // bg-[#12141a] bg-gradient-to-l from-[#161f2b]
-  // bg-[#0c0e13] bg-gradient-to-r
-
   return (
     <aside
-      className={`fixed left-0 top-0 h-[100dvh] z-50 bg-[#0c0e13] bg-gradient-to-r     
-        transition-all duration-500 ${
-          !isVisible ? "opacity-100 visible " : "opacity-0 invisible "
-        } ;`}
+      className={`fixed z-50 transition-all duration-500 ${!isVisible ? "opacity-100 visible" : "opacity-0 invisible"
+        } top-4 left-4 flex flex-col items-center pt-6`}
     >
-      <div className="flex flex-col p-4 py-6 h-[100dvh]">
-        <div className="mb-7">
-          <img
-            src="https://github.com/suavegreen.png"
-            className="rounded-full size-12"
-          />
-        </div>
-        <div className="flex flex-col-reverse justify-between h-screen">
+      {/* 1. FOTO DE PERFIL (Sobreposta) */}
+      <div className="absolute top-0 z-10 w-16 h-16 rounded-full overflow-hidden">
+        <img
+          src="https://github.com/suavegreen.png"
+          alt="Pedro Caetano"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* 2. CAIXA DO MENU (Cinza flutuante) */}
+      <div
+        className={`w-16 bg-[#12161f] bg-gradient-to-t from-[#191f2a] backdrop-blur-sm rounded-b-3xl rounded-t-xl flex flex-col items-center transition-all duration-300 overflow-hidden pt-10 pb-4 ${isOpen ? "max-h-[500px]" : "max-h-[85px]"
+          }`}
+      >
+        {/* BOTÃO HAMBÚRGUER */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="p-2 text-verdePastel hover:text-white transition-colors"
+        >
+          {isOpen ? <X className="size-6" /> : <Menu className="size-6" />}
+        </button>
+
+        {/* 3. CONTEÚDO DO MENU (Links e Ícones) */}
+        <div className="flex flex-col justify-between h-full w-full items-center mt-4 opacity-100 transition-opacity duration-300">
+
+          {/* Navegação Superior */}
           <div className="grid gap-6 justify-center">
-            <div className="gap-2 hidden">
-              <User className="size-5 text-verdePastel" />
-              <h1 className="text-verdePastel duration-300 hover:cursor-default font-mono">
-                Pedro Caetano
-              </h1>
-            </div>
-            <div className="gap-2 hidden">
-              <Stack className="size-5 text-verdePastel" />
-              <h2 className="duration-300 hover:cursor-default font-mono hidden">
-                Front-End
-              </h2>
-            </div>
-            <div className="flex gap-2">
-              <FrameCorners
-                className="size-6 
-                  celular:text-slate-100 celularx:text-red-600 tablet:text-orange-600 tabletx:text-yellow-600 notebook:text-green-600 monitor:text-teal-700
-                "
-              />
-            </div>
-            <div className="flex gap-2">
-              <a href="https://linkedin.com/in/pedrohccaetano" target="_blank">
-                <Linkedin className="size-6 text-verdePastel" />
-                <p className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono hidden">
-                  Linkedin
-                </p>
-              </a>
-            </div>
-            <div className="flex gap-2">
-              <a href="https://github.com/SuaveGreen" target="_blank">
-                <GithubLogo className="text-verdePastel size-6" />
-                <p className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono hidden">
-                  GitHub
-                </p>
-              </a>
-            </div>
-            {/* <div className="flex gap-2">
-              <a href="*">
-                <EnvelopeSimple className="text-verdePastel size-6" />
-                <p className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono hidden">
-                  Gmail
-                </p>
-              </a>
-            </div> */}
-            {/* <div className="flex gap-2">
-              <a href="*">
-                <Phone className="text-verdePastel size-6" />
-                <p className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono hidden">
-                  Telefone
-                </p>
-              </a>
-            </div> */}
-            {/* <div className="flex gap-2">
-              <a href="*">
-                <InstagramLogo className="text-verdePastel size-6" />
-                <p className="hover:translate-x-3 duration-300 hover:cursor-pointer font-mono hidden">
-                  Instagram
-                </p>
-              </a>
-            </div> */}
+            <Link activeClass="active" to="aboutMe" spy={true} smooth={true} offset={30} duration={800}>
+              <span className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer hover:scale-110 transition-transform">
+                <User className="size-6" />
+              </span>
+            </Link>
+
+            <Link activeClass="active" to="jaEstudei" spy={true} smooth={true} offset={30} duration={800}>
+              <span className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer hover:scale-110 transition-transform">
+                <GraduationCap className="size-6" />
+              </span>
+            </Link>
+
+            <Link activeClass="active" to="mainProjects" spy={true} smooth={true} offset={-30} duration={800}>
+              <span className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer hover:scale-110 transition-transform">
+                <Code className="size-6" />
+              </span>
+            </Link>
           </div>
-          <div className="grid gap-6 justify-center">
-            <div>
-              <Link
-                activeClass="active"
-                to="aboutMe"
-                spy={true}
-                smooth={true}
-                offset={30}
-                duration={800}
-              >
-                <span className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
-                  Sobre mim
-                  <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
-                </span>
-                <span className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
-                  <IdentificationBadge className="size-6" />
-                </span>
-              </Link>
-            </div>
-            <div>
-              <Link
-                activeClass="active"
-                to="jaEstudei"
-                spy={true}
-                smooth={true}
-                offset={30}
-                duration={800}
-              >
-                <span className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
-                  Conhecimento
-                  <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
-                </span>
-                <span className="text-lg items-center font-mono text-verdePastel flex gap-3 hover:cursor-pointer group">
-                  <GraduationCap className="size-6" />
-                </span>
-              </Link>
-            </div>
-            <div>
-              <Link
-                activeClass="active"
-                to="mainProjects"
-                spy={true}
-                smooth={true}
-                offset={-30}
-                duration={800}
-              >
-                <span className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
-                  Projetos
-                  <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
-                </span>
-                <span className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group">
-                  <Code className="size-6" />
-                </span>
-              </Link>
-            </div>
-            <div>
-              {/* <Link
-                activeClass="active"
-                to="intensivos"
-                spy={true}
-                smooth={true}
-                offset={-120}
-                duration={800}
-              >
-                <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group hidden">
-                  Intensivões
-                  <ChevronRight className="text-verdePastel size-5 group-hover:animate-bounceR" />
-                </a>
-                <a className="text-lg items-center font-mono text-verdePastel gap-3 hover:cursor-pointer group">
-                  <Certificate className="size-6" />
-                </a>
-              </Link> */}
-            </div>
+
+          {/* Redes Sociais (Rodapé) */}
+          <div className="grid gap-6 justify-center mt-6">
+
+            <a href="https://linkedin.com/in/pedrohccaetano" target="_blank" rel="noreferrer">
+              <Linkedin className="size-6 text-verdePastel hover:scale-110 transition-transform" />
+            </a>
+
+            <a href="https://github.com/SuaveGreen" target="_blank" rel="noreferrer">
+              <GithubLogo className="text-verdePastel size-6 hover:scale-110 transition-transform" />
+            </a>
+
+            <FrameCorners className="size-6 hidden" />
           </div>
+
         </div>
       </div>
     </aside>
